@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #e6f2ff;
+            text-align: center;
+        }
+        .box {
+            margin-top: 100px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            background: #f44336;
+            padding: 8px 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h1>Welcome to Home Page</h1>
+    <p>You have successfully logged in.</p>
+    <a href="login.html">Logout</a>
+</div>
+
+</body>
+</html>
