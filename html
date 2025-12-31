@@ -1,31 +1,112 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <style>
+        /* General Body Styles */
         body {
-            font-family: Arial;
-            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
+
+        /* Login Box */
         .login-box {
-            width: 300px;
-            margin: 100px auto;
-            padding: 20px;
+            width: 350px;
+            padding: 30px;
             background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .login-box h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Inputs */
+        .login-box input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
             border-radius: 5px;
         }
-        input {
-            width: 100%;
-            padding: 8px;
-            margin: 8px 0;
+
+        .login-box input:focus {
+            border-color: #4CAF50;
+            outline: none;
         }
-        button {
+
+        /* Buttons */
+        .login-box button {
             width: 100%;
-            padding: 8px;
+            padding: 12px;
+            margin: 10px 0;
             background-color: #4CAF50;
             color: white;
             border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .login-box button:hover {
+            background-color: #45a049;
+        }
+
+        /* Remember Me and Forgot Password */
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .options label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .options a {
+            text-decoration: none;
+            color: #2575fc;
+        }
+
+        .options a:hover {
+            text-decoration: underline;
+        }
+
+        /* Social Buttons */
+        .social-login {
+            margin-top: 20px;
+        }
+
+        .social-login button {
+            width: 100%;
+            margin: 8px 0;
+            background-color: #4267B2; /* Facebook Blue */
+        }
+
+        .social-login button.google {
+            background-color: #DB4437; /* Google Red */
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 400px) {
+            .login-box {
+                width: 90%;
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -36,8 +117,19 @@
     <form action="home.html">
         <input type="text" placeholder="Username" required>
         <input type="password" placeholder="Password" required>
+        
+        <div class="options">
+            <label><input type="checkbox"> Remember me</label>
+            <a href="#">Forgot password?</a>
+        </div>
+
         <button type="submit">Login</button>
     </form>
+
+    <div class="social-login">
+        <button>Login with Facebook</button>
+        <button class="google">Login with Google</button>
+    </div>
 </div>
 
 </body>
