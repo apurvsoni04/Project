@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Homepage</title>
     <style>
-        /* General Reset */
-        * {
+        /* ..........General Reset */
+        {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -57,7 +57,7 @@
 
         nav ul li a:hover {
             background-color: #575757;
-            border-radius: 5px;
+            border-ra`dius: 5px;
         }
 
         /* Hero Section */
