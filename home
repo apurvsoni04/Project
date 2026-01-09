@@ -23,11 +23,5 @@
 </head>
 <body>
 
-<div class="box">
-    <h1>Welcome to Home Page</h1>
-    <p>You have successfully logged in.</p>
-    <a href="login.html">Logout</a>
-</div>
-
 </body>
 </html>
